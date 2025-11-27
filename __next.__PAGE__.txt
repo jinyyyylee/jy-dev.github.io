@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[14153,["/jy-dev.github.io/_next/static/chunks/4988444d1b9ca74e.js","/jy-dev.github.io/_next/static/chunks/dda2c974de0e742d.js"],"ClientPageRoot"]
-3:I[76879,["/jy-dev.github.io/_next/static/chunks/2d7b3fe5792059ab.js"],"default"]
+3:I[76879,["/jy-dev.github.io/_next/static/chunks/e8993e847ff0fec3.js"],"default"]
 6:I[98475,["/jy-dev.github.io/_next/static/chunks/4988444d1b9ca74e.js","/jy-dev.github.io/_next/static/chunks/dda2c974de0e742d.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"6bVv25n6-4HWI32jRulLt","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/jy-dev.github.io/_next/static/chunks/2d7b3fe5792059ab.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"b0wy-Wc0ueZvPM5-lgiQL","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/jy-dev.github.io/_next/static/chunks/e8993e847ff0fec3.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
