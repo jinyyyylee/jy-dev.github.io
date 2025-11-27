@@ -1,36 +1,9 @@
 'use client'
 
 import Image from "next/image";
-import { HeroSection, type HeroStat } from "./components/main-sections/hero-section";
-import { InfoSection, type InfoSectionData } from "./components/main-sections/info-section";
-
-const sections: InfoSectionData[] = [
-  {
-    id: "overview",
-    label: "프로젝트 소개",
-    title: "포트폴리오 개요",
-    description:
-      "Next.js + Tailwind 기반의 개인 포트폴리오 프로젝트입니다. 컴포넌트 기반 설계를 통해 재사용성을 높이고, 라이트·다크 테마를 즉시 지원합니다.",
-  },
-  {
-    id: "tech",
-    label: "기술 스택",
-    title: "주요 기술 스택",
-    description:
-      "React Server Components, App Router, Image 최적화 등 최신 Next.js 기능을 활용합니다. 스타일링은 Tailwind CSS로 구성해 빠른 반복과 반응형 레이아웃을 제공합니다.",
-  },
-  {
-    id: "deploy",
-    label: "배포 & 문서",
-    title: "배포와 참고 자료",
-    description:
-      "Vercel을 통한 CI/CD 파이프라인을 사용하여 안정적인 배포를 유지합니다. 공식 문서와 템플릿을 참고해 빠르게 시작할 수 있습니다.",
-    cta: {
-      label: "문서 살펴보기",
-      href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
-    },
-  },
-];
+import { HeroSection } from "./components/main-sections/hero-section";
+import { ProjectsSection } from "./components/main-sections/projects-section";
+import { TechStackSection } from "./components/main-sections/tech-stack-section";
 
 interface NavigationItem {
   id: string;
@@ -40,11 +13,8 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   { id: "hero", label: "홈", icon: "🏠" },
-  ...sections.map((section) => ({
-    id: section.id,
-    label: section.label,
-    icon: section.id === "overview" ? "👤" : section.id === "tech" ? "🧩" : "📤",
-  })),
+  { id: "projects", label: "주요 프로젝트", icon: "🗂️" },
+  { id: "tech-stack", label: "기술 스택", icon: "🧩" },
 ];
 
 export default function Home() {
@@ -123,9 +93,8 @@ export default function Home() {
 
         <main className="flex flex-1 flex-col gap-12">
           <HeroSection />
-          {sections.map((section) => (
-            <InfoSection key={section.id} {...section} />
-          ))}
+          <ProjectsSection />
+          <TechStackSection />
         </main>
       </div>
     </div>

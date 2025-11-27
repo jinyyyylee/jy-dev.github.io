@@ -156,7 +156,7 @@ export function HeroSection() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-neutral-500 dark:text-neutral-400">
             다양한 플랫폼에서 가치를 창출하는 풀스택 개발자
           </p>
-          <p className="text-xl font-bold leading-tight tracking-tight text-transparent sm:text-2xl">
+          <p className="text-xl font-bold leading-tight tracking-tight text-transparent sm:text-xl">
             <span className="bg-linear-to-r from-neutral-900 via-slate-700 to-sky-600 bg-clip-text dark:from-white dark:via-slate-200 dark:to-sky-400">
               경험 기반의 문제 해결과 제품 임팩트에 집중합니다.
             </span>
