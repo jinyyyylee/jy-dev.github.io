@@ -7,6 +7,7 @@ export interface HeroStat {
   targetValue: number;
   suffix: string;
   description: string;
+  languages: string[];
   icon: IconName;
   accentClass: string;
   gradientClass: string;
@@ -31,9 +32,9 @@ const strengthCards = [
 ];
 
 const highlightPhrases = [
-  "Next.js · Vue 3 · Nuxt로 Web UI를 구축합니다.",
-  "Flutter · Android · iOS로 Mobile UI를 구축합니다.",
-  "Java · MyBatis · MySQL · Redis로 백엔드 서비스를 개발합니다.",
+  "Next.js · Vue 3 · Nuxt 기반으로 안정적인 Web App을 설계하고 개발합니다.",
+  "Flutter · Android · iOS 전반에서 실서비스 Mobile App을 개발·배포합니다.",
+  "Java · MyBatis · MySQL · Redis를 활용해 확장성과 안정성을 갖춘 백엔드를 구현합니다.",
 ];
 
 const stats: HeroStat[] = [
@@ -42,6 +43,7 @@ const stats: HeroStat[] = [
     targetValue: 5,
     suffix: "년+",
     description: "Flutter · Android · iOS",
+    languages: ["Swift", "Kotlin", "Dart", "Object-C", "Java"],
     icon: "mobile",
     accentClass: "text-sky-500",
     gradientClass: "from-sky-500/70 via-cyan-400/20 to-transparent",
@@ -51,6 +53,7 @@ const stats: HeroStat[] = [
     targetValue: 3,
     suffix: "년+",
     description: "Vue · Nuxt · Next.js",
+    languages: ["JavaScript", "TypeScript", "SCSS", "Tailwind"],
     icon: "frontend",
     accentClass: "text-emerald-500",
     gradientClass: "from-emerald-500/70 via-lime-400/20 to-transparent",
@@ -60,6 +63,7 @@ const stats: HeroStat[] = [
     targetValue: 3,
     suffix: "년+",
     description: "Java · MyBatis · MySQL",
+    languages: ["Java", "Spring Boot", "MySQL", "MyBatis", "Redis"],
     icon: "backend",
     accentClass: "text-purple-500",
     gradientClass: "from-purple-500/70 via-fuchsia-400/20 to-transparent",
@@ -174,8 +178,8 @@ export function HeroSection() {
 
       <div className="grid gap-6 md:grid-cols-3">
         {stats.map((stat, index) => (
-          <div key={stat.label} className={`rounded-[26px] bg-linear-to-br ${stat.gradientClass} p-px`}>
-            <div className="flex flex-col items-center justify-center gap-2 rounded-[23px] bg-white/80 p-6 text-center shadow-xl shadow-sky-900/5 transition duration-500 hover:-translate-y-2 dark:bg-neutral-950/70">
+          <div key={stat.label} className={`rounded-[26px] bg-linear-to-br ${stat.gradientClass} p-px overflow-hidden`}>
+            <div className="flex h-full flex-col items-center justify-center gap-2 rounded-[23px] bg-white/80 p-6 text-center shadow-xl shadow-sky-900/5 transition-all duration-500 hover:scale-105 dark:bg-neutral-950/70">
               <div
                 className={`mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/80 text-2xl ${stat.accentClass}`}
               >
@@ -189,6 +193,16 @@ export function HeroSection() {
                 {stat.suffix}
               </p>
               <p className="text-sm text-neutral-500 dark:text-neutral-400">{stat.description}</p>
+              <div className="mt-3 flex flex-wrap justify-center gap-2">
+                {stat.languages.map((language) => (
+                  <span
+                    key={language}
+                    className="rounded-full border border-neutral-300/50 bg-neutral-100/80 px-2.5 py-1 text-xs font-medium text-neutral-700 dark:border-white/20 dark:bg-white/10 dark:text-neutral-200"
+                  >
+                    {language}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}

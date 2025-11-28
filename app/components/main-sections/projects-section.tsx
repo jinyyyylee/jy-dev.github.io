@@ -19,7 +19,7 @@ const projectItems: ProjectItem[] = [
     categories: ["Mobile"],
     title: "현대모비스 모바일 앱",
     summary: "내부 직원용 교육 서비스",
-    description: "Flutter 기반 하이브리드 앱으로 차량 관리, 서비스 예약, 메시지 알림 등 고객 접점을 통합했습니다.",
+    description: "Flutter 기반 하이브리드 앱으로 보안 솔루션을 적용하고 배포 & 운영을 관리했습니다.",
     stacks: ["iOS", "Android", "Swift", "Kotlin"],
     imageUrl: "/mobischool.png",
   },
@@ -28,7 +28,7 @@ const projectItems: ProjectItem[] = [
     categories: ["Mobile"],
     title: "하나금융TI 모바일 앱",
     summary: "내부 직원용 교육 서비스",
-    description: "Android/iOS 네이티브 금융 앱. 보안 모듈, 생체 인증, UX 정비를 담당했습니다.",
+    description: "Android/iOS 네이티브 기반 앱으로 LMS 기능을 개발하고 배포·운영을 관리했습니다.",
     stacks: ["iOS", "Android", "Swift", "Kotlin"],
     imageUrl: "/hanati.png",
   },
@@ -37,7 +37,7 @@ const projectItems: ProjectItem[] = [
     categories: ["Frontend", "Backend"],
     title: "하남교육재단 플랫폼",
     summary: "교육 관리 · 반응형 설계",
-    description: "Nuxt3 기반 진로 탐색 서비스로 인증, 설문, 검사지 등 주요 기능을 담당하였습니다.",
+    description: "Nuxt3 기반 진로·교육 플랫폼으로 인증, 설문, 검사지 등 주요 서비스 로직을 중심으로 프론트엔드와 백엔드를 개발했습니다.",
     stacks: ["Nuxt3", "JavaScript", "Java", "MySQL", "MyBatis"],
     imageUrl: "/hanam.png",
   },
@@ -46,7 +46,7 @@ const projectItems: ProjectItem[] = [
     categories: ["Frontend", "Mobile"],
     title: "뭉클",
     summary: "감사일기 커뮤니티 웹/앱",
-    description: "Vue3, Swfit, kotlin 기반 감사일기 커뮤니티 웹/앱을 개발했습니다.",
+    description: "Vue3·Swift·Kotlin 기반 커뮤니티 서비스로, 감사일기·피드·알림 등 핵심 기능을 구현하며 웹과 앱 개발 전반을 담당했습니다.",
     stacks: ["Vue", "Swift", "Kotlin", "Firebase"],
     imageUrl: "/moongkle.jpg",
   },
@@ -55,7 +55,7 @@ const projectItems: ProjectItem[] = [
     categories: ["Frontend", "Backend", "Mobile"],
     title: "TIP",
     summary: "보험 설계사 교육 서비스",
-    description: "웹뷰 기반 앱 구조 설계 및 구현을 담당하였고 백엔드와 프론트엔드 업무를 지원하였습니다.",
+    description: "웹뷰 기반 하이브리드 구조 설계부터 구현까지 담당했으며, Spring Boot 백엔드 및 Vue3 프론트 개발을 함께 지원했습니다.",
     stacks: ["Java", "Spring Boot", "MySQL", "Vue3", "Swift", "Kotlin"],
     imageUrl: "/tip.png",
   },
@@ -64,7 +64,7 @@ const projectItems: ProjectItem[] = [
     categories: ["Mobile"],
     title: "하나디지털캠퍼스",
     summary: "하나은행 직원 교육용 서비스",
-    description: "Object-C와 Java 기반으로 LMS 기능 개발 및 유지보수를 담당했습니다.",
+    description: "Objective-C·Java 기반 LMS 기능을 개선·확장하며 모바일 앱 유지보수 및 신규 기능 개발을 수행했습니다.",
     stacks: ["Object-C", "Java"],
     imageUrl: "/hanadigital.jpg",
   },
@@ -73,7 +73,7 @@ const projectItems: ProjectItem[] = [
     categories: ["Frontend", "Backend"],
     title: "폴짝",
     summary: "국회의원 후원 웹 서비스",
-    description: "Spring Boot와 Nuxt3 기반으로 국회의원 후원 웹 서비스를 개발했습니다.",
+    description: "Spring Boot와 Nuxt3 기반으로 후원·결제·회원 기능 등 핵심 서비스를 개발하며 전체 구조 설계와 구현에 참여했습니다.",
     stacks: ["Java", "Spring Boot", "Nuxt3"],
     imageUrl: "/polzzak.jpg",
   },
@@ -82,6 +82,7 @@ const projectItems: ProjectItem[] = [
 export function ProjectsSection() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [hasEntered, setHasEntered] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   useEffect(() => {
     if (!sectionRef.current) {
@@ -131,13 +132,13 @@ export function ProjectsSection() {
           <article
             key={project.id}
             style={{ transitionDelay: `${index * 90}ms` }}
-            className={`group flex transform-gpu flex-col gap-4 rounded-[28px] border border-white/10 bg-white/5 p-4 text-left shadow-2xl shadow-black/40 transition-all duration-500 hover:-translate-y-2 hover:border-white/25 ${
+            className={`group flex transform-gpu flex-col gap-4 rounded-[28px] border border-white/10 bg-white/5 p-3 text-left shadow-2xl shadow-black/40 transition-all duration-500 hover:-translate-y-2 hover:border-white/25 ${
               hasEntered ? "scale-100 opacity-100" : "scale-95 opacity-0"
             }`}
           >
             <div className="relative overflow-hidden rounded-2xl">
               <Image
-                src={project.imageUrl}
+                src={`${basePath}${project.imageUrl}`}
                 alt={project.title}
                 width={480}
                 height={320}
@@ -161,8 +162,8 @@ export function ProjectsSection() {
                 <p className="text-sm uppercase tracking-[0.2em] text-neutral-400">{project.summary}</p>
                 <h3 className="mt-1 text-xl font-semibold text-white">{project.title}</h3>
               </div>
-              <p className="text-sm text-neutral-300">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
+              <p className="text-sm text-neutral-300 break-keep">{project.description}</p>
+              <div className="flex flex-wrap gap-2 wrap-keep">
                 {project.stacks.map((stack) => (
                   <span
                     key={stack}
