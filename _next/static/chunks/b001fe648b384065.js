@@ -179,8 +179,8 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
         mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-12
         lg:grid lg:grid-cols-[240px_1fr] lg:gap-12
       `,children:[(0,t.jsxs)("aside",{style:{scrollbarWidth:"none",msOverflowStyle:"none"},className:`jsx-f96b36c339a20fa1 
-            flex w-full flex-col gap-6 overflow-y-auto rounded-3xl border border-neutral-200
-            bg-neutral-50/70 p-6
+            flex w-full flex-col gap-6 overflow-y-auto rounded-3xl border
+            border-neutral-200 bg-neutral-50/70 p-6
             max-lg:hidden
             lg:sticky lg:top-12 lg:max-h-[calc(100vh-6rem)]
             dark:border-neutral-800 dark:bg-neutral-900/60
@@ -205,7 +205,7 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                 `,children:"WillbeSoft"}),(0,t.jsx)("p",{className:`jsx-f96b36c339a20fa1 
                   mt-1 text-xs text-neutral-600
                   dark:text-neutral-400
-                `,children:"2021 ~ 2025"})]}),(0,t.jsxs)("div",{className:`jsx-f96b36c339a20fa1 
+                `,children:"2021 ~ 2025 (4년 4개월)"})]}),(0,t.jsxs)("div",{className:`jsx-f96b36c339a20fa1 
                 rounded-lg border border-neutral-200 bg-neutral-100 p-4
                 dark:border-neutral-700 dark:bg-neutral-800/50
               `,children:[(0,t.jsx)("p",{className:`jsx-f96b36c339a20fa1 
@@ -224,7 +224,8 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                   mb-2 text-xs font-medium text-neutral-500
                   dark:text-neutral-400
                 `,children:"연락처"}),(0,t.jsx)("a",{href:"mailto:jinyyyy.lee@gmail.com",className:`jsx-f96b36c339a20fa1 
-                    text-sm break-all text-blue-600 underline underline-offset-4 transition-colors
+                    text-sm break-all text-blue-600 underline underline-offset-4
+                    transition-colors
                     hover:text-blue-700
                     dark:text-blue-400 dark:hover:text-blue-300
                   `,children:"jinyyyy.lee@gmail.com"})]})]})]}),(0,t.jsx)("div",{className:`jsx-f96b36c339a20fa1 
@@ -239,31 +240,36 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
             `,children:h.map(e=>(0,t.jsxs)("a",{href:`#${e.id}`,onClick:t=>{t.preventDefault();let r=document.getElementById(e.id);r&&r.scrollIntoView({behavior:"smooth",block:"start"}),history.pushState&&history.pushState(null,"",`#${e.id}`)},className:`jsx-f96b36c339a20fa1 
                     flex items-center gap-3 rounded-2xl px-4 py-3 transition
                     hover:bg-white hover:text-neutral-900
-                    focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2
+                    focus-visible:ring-2 focus-visible:ring-neutral-400
+                    focus-visible:ring-offset-2
                     focus-visible:ring-offset-transparent
                     dark:hover:bg-neutral-800 dark:hover:text-white
                   `,children:[(0,t.jsx)("span",{"aria-hidden":!0,className:"jsx-f96b36c339a20fa1",children:e.icon}),e.label]},e.id))})]}),(0,t.jsx)("div",{className:`jsx-f96b36c339a20fa1 
             border-t border-neutral-200
             dark:border-neutral-700
           `}),(0,t.jsxs)("div",{className:"jsx-f96b36c339a20fa1 flex flex-col gap-3",children:[(0,t.jsxs)("a",{onClick:()=>{},target:"_blank",rel:"noopener noreferrer",className:`jsx-f96b36c339a20fa1 
-              flex w-full items-center justify-center gap-2 rounded-2xl border border-neutral-200
-              px-4 py-3 text-center text-sm font-semibold transition
+              flex w-full items-center justify-center gap-2 rounded-2xl border
+              border-neutral-200 px-4 py-3 text-center text-sm font-semibold
+              transition
               hover:bg-white
-              focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2
-              focus-visible:ring-offset-transparent
+              focus-visible:ring-2 focus-visible:ring-neutral-400
+              focus-visible:ring-offset-2 focus-visible:ring-offset-transparent
               dark:border-neutral-700 dark:hover:bg-neutral-800
             `,children:[(0,t.jsx)(s.default,{src:`${e}/tistory.png`,alt:"Tistory",width:24,height:24}),"개발 블로그 바로가기"]}),(0,t.jsxs)("a",{href:`${e}/career.pdf`,download:!0,className:`jsx-f96b36c339a20fa1 
-                flex items-center justify-center gap-2 rounded-2xl border border-neutral-200 px-4
-                py-3 text-center text-sm font-semibold transition
+                flex items-center justify-center gap-2 rounded-2xl border
+                border-neutral-200 px-4 py-3 text-center text-sm font-semibold
+                transition
                 hover:bg-white
-                focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2
+                focus-visible:ring-2 focus-visible:ring-neutral-400
+                focus-visible:ring-offset-2
                 focus-visible:ring-offset-transparent
                 dark:border-neutral-700 dark:hover:bg-neutral-800
               `,children:[(0,t.jsx)("svg",{xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 20 20",stroke:"currentColor",strokeWidth:"1.6","aria-hidden":"true",className:`jsx-f96b36c339a20fa1 
                   h-5 w-5 text-neutral-500
                   dark:text-neutral-300
                 `,children:(0,t.jsx)("path",{strokeLinecap:"round",strokeLinejoin:"round",d:"M10 3v10m0 0l-3-3m3 3l3-3M4 17h12",className:"jsx-f96b36c339a20fa1"})}),"경력기술서 다운로드"]})]})]}),(0,t.jsxs)("main",{className:"flex flex-1 flex-col gap-12",children:[(0,t.jsx)(l,{}),(0,t.jsx)(d,{}),(0,t.jsx)(f,{})]})]}),(0,t.jsx)("div",{className:"fixed right-6 bottom-6 z-10",children:(0,t.jsx)("p",{className:`
-          rounded-full border border-neutral-200/50 bg-white/80 px-4 py-2 text-xs text-neutral-400
-          shadow-sm backdrop-blur-sm
-          dark:border-neutral-800/50 dark:bg-neutral-900/80 dark:text-neutral-500
+          rounded-full border border-neutral-200/50 bg-white/80 px-4 py-2
+          text-xs text-neutral-400 shadow-sm backdrop-blur-sm
+          dark:border-neutral-800/50 dark:bg-neutral-900/80
+          dark:text-neutral-500
         `,children:"현재 프로젝트는 Next.js 기반으로 개발되었습니다."})})]})}e.s(["default",()=>p],76879)}]);
