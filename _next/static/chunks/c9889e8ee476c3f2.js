@@ -131,7 +131,7 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                 `,children:e.summary}),(0,t.jsx)("h3",{className:"mt-1 text-xl text-white",children:e.title})]}),(0,t.jsx)("p",{className:"text-sm text-white/50",children:e.description}),(0,t.jsx)("div",{className:"wrap-keep flex flex-wrap gap-2",children:e.stacks.map(e=>(0,t.jsx)("span",{className:`
                       rounded-md border border-white/10 bg-white/5 px-3 py-1
                       text-xs font-medium text-neutral-100
-                    `,children:e},e))})]})]},e.id))})]})}let c=["Heic 확장자 파일 업로드 및 미리보기","Heic 확장자 파일 변환 가능 (JPEG, PNG 등)","Heic 확장자 파일 다운로드 가능","직관적인 사용자 인터페이스"],u=["Tauri","Rust","JavaScript","Tailwind"];function f(){let e=(0,n.useRef)(null);return(0,t.jsxs)("section",{id:"platform-extension",ref:e,className:`
+                    `,children:e},e))})]})]},e.id))})]})}let c=["Heic 확장자 파일 업로드 및 미리보기","Heic 확장자 파일 변환 가능 (JPEG, PNG 등)","Heic 확장자 파일 다운로드 가능"],u=["Tauri","Rust","JavaScript","Tailwind"];function f(){let e=(0,n.useRef)(null);return(0,t.jsxs)("section",{id:"platform-extension",ref:e,className:`
         scroll-mt-32 rounded-[32px] border border-white/10 bg-neutral-950/70 p-8
         text-white shadow-[0_40px_120px_-60px_rgba(15,23,42,1)]
         backdrop-blur-2xl
